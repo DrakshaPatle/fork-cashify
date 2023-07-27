@@ -1,0 +1,48 @@
+
+.logo_image{
+    width: 40px;
+    height: 40px;
+}
+.primary-navbar {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Style the logo image */
+  .primary-navbar .navbar-brand img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+  }
+  
+  /* Style the search bar and button */
+  .primary-navbar .form-control {
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-shadow: none;
+  }
+  
+  .primary-navbar .form-control:focus {
+    box-shadow: none;
+  }
+  
+  .primary-navbar .btn-outline-secondary {
+    border-color: #ced4da;
+  }
+  
+  
+  .primary-navbar .me-auto .nav-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .primary-navbar .me-auto .nav-item .bi {
+    margin-right: 0.5rem;
+  }
+  
+
+  .primary-navbar .dropdown .bi {
+    font-size: 1.5rem;
+  }
+  
