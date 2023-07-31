@@ -3,6 +3,7 @@ import { data } from "../../data.js";
 import styles from "./homepage.module.css"; // Import the CSS module
 
 const HomePage = () => {
+  console.log("hii")
   return (
     <>
       <div className={styles['wrapper-sellcash']}>

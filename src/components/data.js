@@ -246,12 +246,54 @@ export const data = [
       {
         "name": "iPad",
         "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3spzGODaPojTDBYuKWWKX5MLGdxm76KB5sumNrIXzyYRAkiTA4U8gEze_hTLKaPOyaFg&usqp=CAU",
-        "price":"1000000",
+        "models": [
+          {
+            "name": "ipad123",
+            "logo": "https://thumbs.dreamstime.com/b/ipad-mini-galati-romania-january-powered-new-chip-bit-architecture-delivers-killer-performance-%C3%A2%E2%82%AC-up-to-four-39440725.jpg",
+            "price":"1000000",
+          },
+          {
+            "name": "ipad23",
+            "logo": "https://thumbs.dreamstime.com/b/ipad-mini-galati-romania-january-powered-new-chip-bit-architecture-delivers-killer-performance-%C3%A2%E2%82%AC-up-to-four-39440725.jpg",
+            "price":"1000000",
+          },
+          {
+            "name": "ipad456",
+            "logo": "https://thumbs.dreamstime.com/b/ipad-mini-galati-romania-january-powered-new-chip-bit-architecture-delivers-killer-performance-%C3%A2%E2%82%AC-up-to-four-39440725.jpg",
+            "price":"1000000",
+          },
+         
+         
+        ],
       },
       {
         "name": "Samsung Galaxy Tab",
         "logo": "https://w7.pngwing.com/pngs/121/591/png-transparent-samsung-logo-electric-blue-text-brand-apps-samsung-blue-text-logo.png",
-        "price":"1000000",
+        
+
+        "models": [
+          {
+            "name": "samusng tab 216",
+            "logo": "https://m.media-amazon.com/images/I/61o0EbhjKDL.jpg",
+            "price":"1000000",
+          },
+          {
+            "name": "samusng tab 261",
+            "logo": "https://m.media-amazon.com/images/I/61o0EbhjKDL.jpg",
+            "price":"1000000",
+          },
+          {
+            "name": "samusng tab 291",
+            "logo": "https://m.media-amazon.com/images/I/61o0EbhjKDL.jpg",
+            "price":"1000000",
+          },
+        ],
+
+
+
+
+
+
       },
 
       
@@ -267,25 +309,7 @@ export const data = [
       {
         "name": "iPad",
         "logo": "https://example.com/ipad_logo.png",
-        "models": [
-          {
-            "name": "ipad123",
-            "logo": "https://5.imimg.com/data5/AY/DP/MY-11673038/lenovo-laptop.png",
-            "price":"1000000",
-          },
-          {
-            "name": "ipad23",
-            "logo": "https://5.imimg.com/data5/AY/DP/MY-11673038/lenovo-laptop.png",
-            "price":"1000000",
-          },
-          {
-            "name": "ipad456",
-            "logo": "https://5.imimg.com/data5/AY/DP/MY-11673038/lenovo-laptop.png",
-            "price":"1000000",
-          },
-         
-         
-        ],
+
 
         "price":"1000000",
       },
