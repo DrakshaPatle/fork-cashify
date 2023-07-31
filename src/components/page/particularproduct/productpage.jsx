@@ -4,15 +4,15 @@ import { data } from "../../data.js";
 import styles from "./productpage.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRupeeSign } from "@fortawesome/free-solid-svg-icons";
-
+ 
 const ProductPage = () => {
   const { heading, brandName, productName } = useParams();
-  const selectedBrandArray = data.find((item) => item.route === `/${heading}`);
-  const brand = selectedBrandArray[heading + "Brands"].find(
-    (b) => b.name.toLowerCase() === brandName.toLowerCase()
+  const selectedCategory = data.find((item) => item.heading === `${heading}`);
+  const brand = selectedCategory.Brands.find(
+    (brand) => brand.name === brandName
   );
   const product = brand.models.find(
-    (model) => model.name.toLowerCase() === productName.toLowerCase()
+    (model) => model.name === productName
   );
   return (
     <>
@@ -28,7 +28,7 @@ const ProductPage = () => {
           </Link>
           <span> &gt; </span>
           <Link
-            to={`/${heading}/${brandName.toLowerCase()}`}
+            to={`/${heading}/${brandName}`}
             className={styles["link-style"]}
           >
             {brandName}

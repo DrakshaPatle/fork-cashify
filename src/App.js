@@ -14,7 +14,7 @@ function App() {
     { path: "/tablet", name: "Tablet" },
   ];
   return (
-   
+    <Router>
       <>
         <div className="App">
           <PrimaryNavbar />
@@ -34,15 +34,17 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/new-cashify" element={<HomePage />} />
-            {dynamicRoutes.map(({ path }) => (
+            {/* {dynamicRoutes.map(({ path }) => (
               <Route key={path} path={path} element={<OldPage />} />
-            ))}
+            ))} */}
+
+            <Route path="/:heading" element={<OldPage />} />
             <Route path="/:heading/:brandName" element={<BrandPage />} />
             <Route path="/:heading/:brandName/:productName" element={<ProductPage />} />
           </Routes>
         </div>
       </>
-   
+    </Router>
   );
 }
 

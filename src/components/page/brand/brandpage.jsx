@@ -4,10 +4,12 @@ import { data } from "../../data.js";
 import styles from "./brandpage.module.css";
 const BrandPage = () => {
   const { heading, brandName } = useParams();
+
+  
   const [searchText, setSearchText] = useState("");
-  const selectedBrandArray = data.find((item) => item.route === `/${heading}`);
-  const brand = selectedBrandArray[heading + "Brands"].find(
-    (b) => b.name.toLowerCase() === brandName.toLowerCase()
+  const selectedCategory = data.find((item) => item.heading === `${heading}`);
+  const brand = selectedCategory.Brands.find(
+    (brand) => brand.name === brandName
   );
   return (
     <>
@@ -26,7 +28,7 @@ const BrandPage = () => {
                 </Link>
                 <span> &gt; </span>
                 <Link
-                  to={`/${heading}/${brandName.toLowerCase()}`}
+                  to={`/${heading}/${brandName}`}
                   className={styles["link-style"]}
                 >
                   {brandName}
@@ -48,7 +50,7 @@ const BrandPage = () => {
             {brand.models.map((model, index) => (
               <Link
                 key={index}
-                to={`/${heading}/${brandName.toLowerCase()}/${model.name.toLowerCase()}`}
+                to={`${model.name}`}
                 className={styles["brand-model-box"]}
               >
                 <img src={model.logo} alt={model.name} />
