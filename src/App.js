@@ -33,7 +33,8 @@ function App() {
         <div className='routed'>
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="/new-cashify" element={<HomePage />} />
+            {/* <Route path="/new-cashify" element={<HomePage />} /> */}
+            
             {/* {dynamicRoutes.map(({ path }) => (
               <Route key={path} path={path} element={<OldPage />} />
             ))} */}
