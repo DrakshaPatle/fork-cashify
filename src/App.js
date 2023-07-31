@@ -25,10 +25,14 @@ function App() {
               <CopyNavbar />
             </div>
           </header>
+          <div>
+          </div>
+         
         </div>
         <div className='routed'>
           <Routes>
             <Route path="/" element={<HomePage />} />
+            <Route path="/new-cashify" element={<HomePage />} />
             {dynamicRoutes.map(({ path }) => (
               <Route key={path} path={path} element={<OldPage />} />
             ))}

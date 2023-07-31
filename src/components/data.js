@@ -283,7 +283,7 @@ export const data = [
             "price":"1000000",
           },
           {
-            "name": "samusng tab 291",
+            "name": "samusng tab 21",
             "logo": "https://m.media-amazon.com/images/I/61o0EbhjKDL.jpg",
             "price":"1000000",
           },

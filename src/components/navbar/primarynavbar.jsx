@@ -8,7 +8,9 @@ const PrimaryNavbar = () => {
       <div className={styles["navbar-container"]}>
         {/* Logo */}
         <div className={styles.logo}>
-          <img src="/navlogo.svg" alt="Logo" />
+          <img src={process.env.PUBLIC_URL + "/navlogo.svg"} alt="icon" />
+
+          {/* <img src="/navlogo.svg" alt="Logo" /> */}
         </div>
         <div className={styles["search-box"]}>
           <input
@@ -16,7 +18,7 @@ const PrimaryNavbar = () => {
             placeholder="search device here "
             className={styles["search-placeholder"]}
           />
-             <i class="fa fa-search" aria-hidden="true"></i>
+          <i class="fa fa-search" aria-hidden="true"></i>
         </div>
         <button className={styles["login-button"]}>Login</button>
       </div>

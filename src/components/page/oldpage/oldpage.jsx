@@ -46,10 +46,12 @@ const OldPage = () => {
           <div className={styles["second-container"]}>
             <h1>{selectedHeading} for Instant Cash</h1>
             <p className={styles["maximum-heading"]}>
-              <img src="/rightlogo.svg"></img> 
-               Maximum Value
-              <img src="/rightlogo.svg"></img> Safe & Hassle-free{" "}
-              <img src="/rightlogo.svg"></img> Free Doorstep Pickup
+              <img src={process.env.PUBLIC_URL + "/rightlogo.svg"} alt="icon" />
+              Maximum Value
+              <img src={process.env.PUBLIC_URL + "/rightlogo.svg"} alt="icon" />
+              Safe & Hassle-free{" "}
+              <img src={process.env.PUBLIC_URL + "/rightlogo.svg"} alt="icon" />
+              Free Doorstep Pickup
             </p>
             <div className={styles["search-box"]}>
               <input

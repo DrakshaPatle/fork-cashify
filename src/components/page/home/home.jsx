@@ -12,6 +12,8 @@ const HomePage = () => {
           {data.map((box) => (
             <a className={styles['item-heading']} key={box.id} href={box.route}>
               <div className={styles['box']}>
+
+              {/* <img src={process.env.PUBLIC_URL + box.imageSrc} alt="box.heading" /> */}
                 <img src={box.imageSrc} alt={box.heading} />
                 <h6>{box.heading}</h6>
               </div>
