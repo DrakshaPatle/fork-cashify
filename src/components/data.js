@@ -3,7 +3,7 @@ export const data = [
   {
     "id": "sell-phone",
     "imageSrc": "https://s3n.cashify.in/imageLibrary/sell_phone_deab8bbb0bb7.png",
-    "heading": "Sell Phone",
+    "heading": "sell-phone",
     "route": "/sell-phone",
     "sell-phoneBrands": [
       {
@@ -132,7 +132,7 @@ export const data = [
   {
     "id": "laptop",
     "imageSrc": "https://s3n.cashify.in/imageLibrary/sell_laptop_f907031d0445.png",
-    "heading": "Laptop",
+    "heading": "laptop",
     "route": "/laptop",
     "laptopBrands": [
       {
@@ -303,7 +303,7 @@ export const data = [
   {
     "id": "tablet",
     "imageSrc": "https://s3n.cashify.in/imageLibrary/sell_tablet_617881c0b0b1.png",
-    "heading": "Tablet",
+    "heading": "tablet",
     "route": "/tablet",
     "tabletBrands": [
       {
