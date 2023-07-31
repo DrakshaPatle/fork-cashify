@@ -1,0 +1,99 @@
+.old-container {
+  display: flex;
+  justify-content:space-evenly;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.breadcrumb{
+
+  margin-top: 50px;
+}
+.right-section {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  padding: 40px;
+  border-radius: 8px;
+  background-color: #f7f6f6;
+
+}
+.second-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+}
+.search-box {
+  margin-top: 20px;
+  
+  
+}
+.link-style
+{
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+ 
+  margin-right: 2px;
+}
+
+input,
+input::placeholder {
+ width: 350px;
+ height: 50px;
+}
+
+.maximum-heading {
+  margin-top: 20px;
+}
+.choose-brand {
+  margin-top: 20px;
+}
+.search-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 18px;
+}
+
+.brand-container {
+  display: flex;
+}
+
+.brand-box {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.more-brands {
+  cursor: pointer;
+}
+.right-image {
+  float: right;
+  height: 30%;
+  width: 30%;
+}
+.brand-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: 20px;
+}
+.brand-container img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+.brand-container img:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}

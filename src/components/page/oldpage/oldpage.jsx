@@ -1,42 +1,88 @@
-import React from "react";
-import { useState } from "react";
-import "./oldpage.css"
+import React, { useState, useEffect } from "react";
+import styles from "./oldpage.module.css"; // Import the CSS module
+import { Link } from "react-router-dom";
+import { data } from "../../data.js";
+
 const OldPage = () => {
-  const [selectedHeading, setSelectedHeading] = useState("Sell Phone");
+  const [selectedHeading, setSelectedHeading] = useState("sell-phone");
   const [searchPlaceholder, setSearchPlaceholder] = useState(
     "Search your mobile phone to sell"
   );
+  const [selectedLogos, setSelectedLogos] = useState([]);
 
-  const handleBoxClick = (heading) => {
-    setSelectedHeading(heading);
-    setSearchPlaceholder(`Search your ${heading.toLowerCase()} to sell`);
-  };
+  useEffect(() => {
+    const currentRoute = window.location.pathname;
+    const routeParts = currentRoute.split("/");
+    const selectedHeadingFromRoute = routeParts[routeParts.length - 1];
+    setSelectedHeading(selectedHeadingFromRoute);
+    setSearchPlaceholder(
+      `Search your ${selectedHeadingFromRoute.toLowerCase()} to sell`
+    );
+
+    const selectedBrandArray = data.find(
+      (item) => item.route === `/${selectedHeadingFromRoute}`
+    );
+    const logos = selectedBrandArray
+      ? selectedBrandArray[selectedHeadingFromRoute + "Brands"].slice(0, 4)
+      : [];
+    setSelectedLogos(logos);
+  }, []);
 
   return (
-    <div className="right-section">
-        
-      <div >
-        <h3>{selectedHeading}</h3>
-        <p>Maximum Value | Safe & Hassle-free | Free Doorstep Pickup</p>
-        <div className="search-box">
-          <input type="text" placeholder={searchPlaceholder} />
-
-          {/* <span className="search-icon">&#128269;</span> */}
+    <>
+      <div className={styles["old-container"]}>
+        <div className={styles["breadcrumb"]}>
+          <Link to="/" className={styles["link-style"]}>
+            Home
+          </Link>
+          <span> &gt; </span>
+          <Link to={`/${selectedHeading}`} className={styles["link-style"]}>
+            {selectedHeading}
+          </Link>
+          <span> &gt; </span>
         </div>
-        <h4>Choose your brand</h4>
-        <div className="brand-container">{/* Brand boxes here */}</div>
-        <p className="more-brands">More Brands &rarr;</p>
+
+        <div className={styles["right-section"]}>
+          <div className={styles["second-container"]}>
+            <h1>{selectedHeading} for Instant Cash</h1>
+            <p className={styles["maximum-heading"]}>
+              <img src="/rightlogo.svg"></img> 
+               Maximum Value
+              <img src="/rightlogo.svg"></img> Safe & Hassle-free{" "}
+              <img src="/rightlogo.svg"></img> Free Doorstep Pickup
+            </p>
+            <div className={styles["search-box"]}>
+              <input
+                type="text"
+                placeholder={searchPlaceholder}
+                className={styles["search-placeholder"]}
+              />
+            </div>
+            <h4 className={styles["choose-brand"]}>Choose your brand</h4>
+            <div className={styles["brand-container"]}>
+              {selectedLogos.map((brand, index) => (
+                <Link
+                  key={index}
+                  to={`/${selectedHeading}/${brand.name}`}
+                  className={styles["brand-link"]}
+                >
+                  <img src={brand.logo} alt={brand.name} />
+                </Link>
+              ))}
+            </div>
+            <p className={styles["more-brands"]}>More Brands &rarr;</p>
+          </div>
+
+          <div className={styles["right-image"]}>
+            <img
+              src="https://s3n.cashify.in/estore/c45a45e02d0646e2b9ae0b55a85692d7.png"
+              width={400}
+              alt="Right Image"
+            />
+          </div>
+        </div>
       </div>
-
-
-      <div className="right-image">
-      <img 
-        src ="https://s3n.cashify.in/estore/c45a45e02d0646e2b9ae0b55a85692d7.png"  margin = {50} width={ 400}>
-        
-        </img>
-      </div>
-
-    </div>
+    </>
   );
 };
 

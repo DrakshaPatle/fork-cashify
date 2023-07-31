@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import './App.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+import "./index.css"
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 {
   /* The following line can be included in your src/index.js or App.js file */
 }
-
+<script src="https://kit.fontawesome.com/2c686d925d.js" crossorigin="anonymous"></script>
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
