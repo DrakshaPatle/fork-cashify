@@ -45,7 +45,21 @@ export const menuItems = [
         ],
       },
       {
-        title: 'Tablets',
+        title: 'Smarwatch',
+        submenu: [
+          {
+            title: 'sonata',
+          },
+          {
+            title: 'titan',
+          },
+          {
+            title: 'fastrack',
+          },
+        ],
+      },
+      {
+        title: 'more',
         submenu: [
           {
             title: 'iPad',

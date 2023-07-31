@@ -80,12 +80,12 @@ export const data = [
         "models": [
           {
             "name": "Samsung Galaxy S21",
-            "logo": "https://example.com/galaxys21.png",
+            "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH-o4AGNFy8C-Ek2pe-x_0-kVpCrD_fnPJ7FhSKDVtT-3x6WP02iqGxHSRn3u2dgJXP9U&usqp=CAU",
             "price":"1000000",
           },
           {
             "name": "Samsung Galaxy S20",
-            "logo": "https://example.com/galaxys20.png",
+            "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH-o4AGNFy8C-Ek2pe-x_0-kVpCrD_fnPJ7FhSKDVtT-3x6WP02iqGxHSRn3u2dgJXP9U&usqp=CAU",
             "price":"1000000",
           },
           // Add more Samsung Galaxy models as needed
@@ -97,12 +97,12 @@ export const data = [
         "models": [
           {
             "name": "Google Pixel 6",
-            "logo": "https://example.com/pixel6.png",
+            "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT13qniUv5qMrQlsyYSusV61oVTzC3fA-fyVQ&usqp=CAU",
             "price":"1000000",
           },
           {
             "name": "Google Pixel 5",
-            "logo": "https://example.com/pixel5.png",
+            "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT13qniUv5qMrQlsyYSusV61oVTzC3fA-fyVQ&usqp=CAU",
             "price":"1000000",
           },
           // Add more Google Pixel models as needed
@@ -114,12 +114,12 @@ export const data = [
         "models": [
           {
             "name": "Xiaomi Mi 11",
-            "logo": "https://example.com/mi11.png",
+            "logo": "https://m.media-amazon.com/images/I/41vVavfyzxS._SX300_SY300_QL70_FMwebp_.jpg",
             "price":"1000000",
           },
           {
             "name": "Xiaomi Mi 10",
-            "logo": "https://example.com/mi10.png",
+            "logo": "https://m.media-amazon.com/images/I/41vVavfyzxS._SX300_SY300_QL70_FMwebp_.jpg",
             "price":"1000000",
           },
           // Add more Xiaomi Mi models as needed
@@ -180,25 +180,35 @@ export const data = [
         "models": [
           {
             "name": "813 dell laptop",
-            "logo": "https://www.shutterstock.com/shutterstock/photos/1919355743/display_1500/stock-photo-poznan-pol-sep-laptop-computer-displaying-logo-of-dell-an-american-computer-1919355743.jpg",
+            "logo": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/15-3510/media-gallery/archive/dv3510nt_cnb_00055rf110_gy.psd?fmt=pjpg&pscan=auto&scl=1&wid=4582&hei=2854&qlt=100,1&resMode=sharp2&size=4582,2854&chrss=full&imwidth=5000",
             "price":"1000000",
           },
           {
             "name": "815 Dell vostro",
-            "logo": "https://www.shutterstock.com/shutterstock/photos/1919355743/display_1500/stock-photo-poznan-pol-sep-laptop-computer-displaying-logo-of-dell-an-american-computer-1919355743.jpg",
+            "logo": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/15-3510/media-gallery/archive/dv3510nt_cnb_00055rf110_gy.psd?fmt=pjpg&pscan=auto&scl=1&wid=4582&hei=2854&qlt=100,1&resMode=sharp2&size=4582,2854&chrss=full&imwidth=5000",
             "price":"1000000",
           },
           {
             "name": "815 Dell vostro",
-            "logo": "https://www.shutterstock.com/shutterstock/photos/1919355743/display_1500/stock-photo-poznan-pol-sep-laptop-computer-displaying-logo-of-dell-an-american-computer-1919355743.jpg",
+            "logo": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/15-3510/media-gallery/archive/dv3510nt_cnb_00055rf110_gy.psd?fmt=pjpg&pscan=auto&scl=1&wid=4582&hei=2854&qlt=100,1&resMode=sharp2&size=4582,2854&chrss=full&imwidth=5000",
             "price":"1000000",
           },
           {
             "name": "815 Dell vostro",
-            "logo": "https://www.shutterstock.com/shutterstock/photos/1919355743/display_1500/stock-photo-poznan-pol-sep-laptop-computer-displaying-logo-of-dell-an-american-computer-1919355743.jpg",
+            "logo": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/15-3510/media-gallery/archive/dv3510nt_cnb_00055rf110_gy.psd?fmt=pjpg&pscan=auto&scl=1&wid=4582&hei=2854&qlt=100,1&resMode=sharp2&size=4582,2854&chrss=full&imwidth=5000",
             "price":"1000000",
           },
-          // Add more Samsung Galaxy models as needed
+          {
+            "name": "815 Dell vostro",
+            "logo": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/15-3510/media-gallery/archive/dv3510nt_cnb_00055rf110_gy.psd?fmt=pjpg&pscan=auto&scl=1&wid=4582&hei=2854&qlt=100,1&resMode=sharp2&size=4582,2854&chrss=full&imwidth=5000",
+            "price":"1000000",
+          },
+          {
+            "name": "815 Dell vostro",
+            "logo": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/15-3510/media-gallery/archive/dv3510nt_cnb_00055rf110_gy.psd?fmt=pjpg&pscan=auto&scl=1&wid=4582&hei=2854&qlt=100,1&resMode=sharp2&size=4582,2854&chrss=full&imwidth=5000",
+            "price":"1000000",
+          },
+          
         ]
       },
       {
@@ -235,14 +245,16 @@ export const data = [
     "tabletBrands": [
       {
         "name": "iPad",
-        "logo": "https://example.com/ipad_logo.png",
+        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3spzGODaPojTDBYuKWWKX5MLGdxm76KB5sumNrIXzyYRAkiTA4U8gEze_hTLKaPOyaFg&usqp=CAU",
         "price":"1000000",
       },
       {
         "name": "Samsung Galaxy Tab",
-        "logo": "https://example.com/samsung_tab_logo.png",
+        "logo": "https://w7.pngwing.com/pngs/121/591/png-transparent-samsung-logo-electric-blue-text-brand-apps-samsung-blue-text-logo.png",
         "price":"1000000",
       },
+
+      
       // Add more tablet brands as needed
     ]
   },
@@ -255,6 +267,26 @@ export const data = [
       {
         "name": "iPad",
         "logo": "https://example.com/ipad_logo.png",
+        "models": [
+          {
+            "name": "ipad123",
+            "logo": "https://5.imimg.com/data5/AY/DP/MY-11673038/lenovo-laptop.png",
+            "price":"1000000",
+          },
+          {
+            "name": "ipad23",
+            "logo": "https://5.imimg.com/data5/AY/DP/MY-11673038/lenovo-laptop.png",
+            "price":"1000000",
+          },
+          {
+            "name": "ipad456",
+            "logo": "https://5.imimg.com/data5/AY/DP/MY-11673038/lenovo-laptop.png",
+            "price":"1000000",
+          },
+         
+         
+        ],
+
         "price":"1000000",
       },
       {

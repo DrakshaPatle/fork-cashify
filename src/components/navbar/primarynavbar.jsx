@@ -13,7 +13,7 @@ const PrimaryNavbar = () => {
         <div className={styles["search-box"]}>
           <input
             type="text"
-            placeholder="seaarch device here "
+            placeholder="search device here "
             className={styles["search-placeholder"]}
           />
              <i class="fa fa-search" aria-hidden="true"></i>

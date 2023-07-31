@@ -33,9 +33,7 @@ const BrandPage = () => {
                 </Link>
                 <span> &gt; </span>
               </div>
-              <div>
-                <p>select model</p>
-              </div>
+              <p className="select-model">select model</p>
             </div>
 
             <div className={styles["search-box"]}>
