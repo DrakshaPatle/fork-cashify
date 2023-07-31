@@ -8,25 +8,39 @@ const OldPage = () => {
   const [searchPlaceholder, setSearchPlaceholder] = useState(
     "Search your mobile phone to sell"
   );
+
   const [selectedLogos, setSelectedLogos] = useState([]);
 
   useEffect(() => {
     const currentRoute = window.location.pathname;
+    console.log(currentRoute)
     const routeParts = currentRoute.split("/");
+    console.log(routeParts)
     const selectedHeadingFromRoute = routeParts[routeParts.length - 1];
+    console.log(selectedHeadingFromRoute)
     setSelectedHeading(selectedHeadingFromRoute);
     setSearchPlaceholder(
       `Search your ${selectedHeadingFromRoute.toLowerCase()} to sell`
     );
 
+
+
+
+
     const selectedBrandArray = data.find(
       (item) => item.route === `/${selectedHeadingFromRoute}`
     );
+    console.log(selectedBrandArray)
     const logos = selectedBrandArray
       ? selectedBrandArray[selectedHeadingFromRoute + "Brands"].slice(0, 4)
       : [];
     setSelectedLogos(logos);
   }, []);
+
+
+
+
+
 
   return (
     <>

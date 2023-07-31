@@ -14,7 +14,7 @@ function App() {
     { path: "/tablet", name: "Tablet" },
   ];
   return (
-    <Router>
+   
       <>
         <div className="App">
           <PrimaryNavbar />
@@ -42,7 +42,7 @@ function App() {
           </Routes>
         </div>
       </>
-    </Router>
+   
   );
 }
 
