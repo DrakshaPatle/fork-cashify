@@ -7,12 +7,12 @@ import HomePage from './components/page/home/home';
 import BrandPage from './components/page/brand/brandpage';
 import ProductPage from './components/page/particularproduct/productpage';
 function App() {
-  const dynamicRoutes = [
-    { path: "/sell-phone", name: "Sell Phone" },
-    { path: "/laptop", name: "Laptop" },
-    { path: "/tv", name: "TV" },
-    { path: "/tablet", name: "Tablet" },
-  ];
+  // const dynamicRoutes = [
+  //   { path: "/sell-phone", name: "Sell Phone" },
+  //   { path: "/laptop", name: "Laptop" },
+  //   { path: "/tv", name: "TV" },
+  //   { path: "/tablet", name: "Tablet" },
+  // ];
   return (
     <Router>
       <>
@@ -32,10 +32,15 @@ function App() {
         <div className='routed'>
           <Routes>
             <Route path="/" element={<HomePage />} />
-         
-            {dynamicRoutes.map(({ path }) => (
+            <Route path="/new-cashify" element={<HomePage />} />
+            <Route path="/sell-phone" element={<OldPage />} />
+            <Route path="/laptop" element={<OldPage />} />
+            <Route path="/tablet" element={<OldPage />} />
+
+
+            {/* {dynamicRoutes.map(({ path }) => (
               <Route key={path} path={path} element={<OldPage />} />
-            ))}
+            ))} */}
             <Route path="/:heading/:brandName" element={<BrandPage />} />
             <Route path="/:heading/:brandName/:productName" element={<ProductPage />} />
           </Routes>
