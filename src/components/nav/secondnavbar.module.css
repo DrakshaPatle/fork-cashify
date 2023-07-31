@@ -67,10 +67,6 @@ header {
   padding: 0.7rem 1rem;
 }
 
-.menu-items a:hover,
-.menu-items button:hover {
- 
-}
 
 .arrow::after {
   content: "";
